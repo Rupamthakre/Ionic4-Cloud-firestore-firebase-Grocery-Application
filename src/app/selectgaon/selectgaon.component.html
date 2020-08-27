@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true"> 
+  <div>Select Gaon</div>
+
+  
+
+  <ion-list>
+    <ion-card *ngFor="let data of villagenam" (click)="openshop(data.name)">
+      <ion-card-header>
+        <ion-card-title></ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+      <h2 style="color:black"> {{data.name}}</h2>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+
+  
+</ion-content>

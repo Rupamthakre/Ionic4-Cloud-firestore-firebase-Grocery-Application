@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true"> 
+  <div>Select Shops of your village</div>
+
+  
+
+  
+
+  <ion-col size="12" *ngFor="let shnam of shopname">
+    <ion-card (click)="onclick()">  
+      <ion-card-header>  
+        <ion-card-subtitle>{{shnam.mobile}}</ion-card-subtitle>  
+        <ion-card-title>{{shnam.name}}</ion-card-title>  
+        </ion-card-header>  
+      <ion-card-content>  
+          Shopname:-<h4>{{shnam.shopname}}</h4>
+          <br>
+          Village:-<h4>{{shnam.village}}</h4>
+          
+      </ion-card-content>  
+    </ion-card> 
+    </ion-col>
+  
+
+
+
+
+  
+</ion-content>

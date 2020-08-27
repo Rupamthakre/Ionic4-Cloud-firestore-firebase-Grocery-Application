@@ -1,0 +1,1 @@
+export interface Protype{  name:string;  image:string; }
